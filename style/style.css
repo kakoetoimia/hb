@@ -1,1 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --p_size:40px;
+    --h1_size: 64px;
+}
+p{
+    font-family: Roboto;
+    font-size: var(--p_size);
+}
+h1{
+    font-family: Roboto;
+    font-size: var(--h1_size);
+    padding: 1%;
+    background-color: rgb(8, 0, 85);
+    border-radius: 15px;
+}
+body{
+     padding: 0;
+     color: white;
+    margin: 0;
+    background-color: rgb(8, 0, 85);
+}
+.paralax_img{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ключевое свойство */
+}
+#a1{
+    background-image: url('img/5.jpg');
+}
+#a2{
+    background-image: url('img/1.jpg');
+}
+#a3{
+    background-image: url('img/6.jpg');
+}
+#a4{
+    background-image: url('img/2.jpg');
+}
+#a5{
+    background-image: url('img/3.jpg');
+}
+#a6{
+    background-image: url('img/4.jpg');
+}
+.paralax_txt{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3vh;
+}
+a{
+    color: orange;
+    font-size: var(--p_size);
+    background-color: rgb(8, 0, 85);
+    padding: 1%;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 1s;
+}
+a:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+@media(max-width:700px){
+    :root{
+        --h1_size:48px;
+        --p_size:24px;
+    }
+}
+@media(max-width:450px){
+    :root{
+        --h1_size:32px;
+        --p_size:20px;
+    }
+}
